@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   assetsInclude: ["**/*.glb", "**/*.gltf"],
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve("./src"),
