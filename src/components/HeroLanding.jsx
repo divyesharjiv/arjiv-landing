@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import MOONVIDEO from "@/assets/videos/MOONVIDEO.mp4";
 // import spiral from "@/assets/svg/spiral.svg";
 // import spiral from "@/assets/svg/inkpx-curved-text.png";
-import spiral from "@/assets/svg/SPIRAL1.SVG";
+import spiral from "@/assets/svg/SPIRAL1.svg";
 
 const TITLE_CHAR = [
   "A",
