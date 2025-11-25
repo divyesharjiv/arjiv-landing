@@ -1,0 +1,33 @@
+/*  */
+
+.csr-hero {
+  background-image: url(https://cdn.prod.website-files.com/67d3d9269e8bfae4dec6d983/681c3f555b9c854200830f5b_image%2062.webp);
+  background-image: url(https://i.postimg.cc/N0FBVnmF/Frame-33.png);
+  background-image: url(https://i.postimg.cc/HnpSZq8z/Ellipse-33.png);
+  background-image: url(https://i.postimg.cc/FR2cWqWW/Ellipse-Greern.png);
+  background-image: url(../../assets/svg/EllipseBG.png);
+  background-position: top;
+  background-size: cover;
+}
+
+.csr-content-section {
+  background-image: url(https://cdn.prod.website-files.com/67d3d9269e8bfae4dec6d983/681c4d585e7ea10295a0ca98_Frame%20855%20\(5\).jpg);
+  background-size: cover;
+  background-position: left center;
+}
+
+.csr-fixed-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url(../../assets//svg/CSRBG.svg);
+  background-image: url(../../assets//svg/CSRBGX.svg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+

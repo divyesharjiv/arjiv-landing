@@ -1,0 +1,130 @@
+.eventsSectionRoot {
+  width: 100%;
+  overflow: visible;
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 30vh;
+}
+
+.eventCard {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: start;
+}
+
+.eventCard[data-position="left"] {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.eventCard[data-position="right"] {
+  margin-left: auto;
+  margin-right: 0;
+  grid-template-columns: 80% 20%;
+}
+
+.eventCard[data-position="center"] {
+  margin: 0 auto;
+}
+
+.eventNumber {
+  opacity: 0.03;
+  font-size: 17vw;
+  position: absolute;
+  top: -7vw;
+  right: -10vw;
+  line-height: 1;
+  font-weight: 700;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.eventCard[data-position="right"] .eventNumber {
+  right: auto;
+  left: -7vw;
+}
+
+.eventImageWrap {
+  position: relative;
+  grid-area: 1 / 1 / 3 / 3;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 53.125%;
+}
+
+.eventImage {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 80px);
+  background-size: cover;
+  background-position: 50% 0%;
+  opacity: 0.8;
+  will-change: transform;
+}
+
+.eventTitle {
+  position: relative;
+  font-size: 5vw;
+  padding: 0 3vw;
+  margin-top: calc(-15vw / 2);
+  line-height: 1;
+  font-weight: 400;
+  grid-area: 3 / 1 / 4 / 2;
+  will-change: transform;
+  z-index: 2;
+}
+
+.eventCard[data-position="right"] .eventTitle {
+  grid-area: 3 / 2 / 4 / 3;
+  text-align: right;
+  justify-self: end;
+}
+
+.eventDescription {
+  grid-area: 3 / 2 / 4 / 3;
+  padding: 1rem 0 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  justify-self: end;
+}
+
+.eventCard[data-position="right"] .eventDescription {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: left;
+  justify-self: start;
+}
+
+@media (max-width: 768px) {
+  .eventCard {
+    grid-template-columns: 100% !important;
+    max-width: 95vw;
+  }
+
+  .eventTitle {
+    font-size: 20vw;
+    text-align: left !important;
+    justify-self: start !important;
+  }
+
+  .eventDescription {
+    grid-area: 4 / 1 / 5 / 2 !important;
+    text-align: left !important;
+    justify-self: start !important;
+  }
+
+  .eventImageWrap {
+    padding-bottom: 66.67%;
+  }
+
+  .eventNumber {
+    font-size: 30vw;
+  }
+}
