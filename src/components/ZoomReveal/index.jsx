@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import IMG1 from '@/assets/img/custom/1.jpg'
-import IMG2 from '@/assets/img/custom/2.jpg'
-import IMG3 from '@/assets/img/custom/3.jpg'
-import IMG4 from '@/assets/img/custom/4.jpg'
-import IMG5 from '@/assets/img/custom/5.jpg'
-import IMG6 from '@/assets/img/custom/6.jpg'
-import IMG7 from '@/assets/img/custom/7.jpg'
-import IMG8 from '@/assets/img/custom/8.jpg'
-import IMG9 from '@/assets/img/custom/9.jpg'
+import IMG1 from '/img/custom/1.jpg'
+import IMG2 from '/img/custom/2.jpg'
+import IMG3 from '/img/custom/3.jpg'
+import IMG4 from '/img/custom/4.jpg'
+import IMG5 from '/img/custom/5.jpg'
+import IMG6 from '/img/custom/6.jpg'
+import IMG7 from '/img/custom/7.jpg'
+import IMG8 from '/img/custom/8.jpg'
+import IMG9 from '/img/custom/9.jpg'
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import IMG1 from "@/assets/img/3d/01.jpg";
-import IMG2 from "@/assets/img/3d/02.jpg";
-import IMG3 from "@/assets/img/3d/03.png";
-import IMG4 from "@/assets/img/3d/Craftsmanship.jpg";
-import IMG5 from "@/assets/img/3d/Delivery.jpg";
-import IMG6 from "@/assets/img/3d/Modification.jpg";
-import IMG7 from "@/assets/img/3d/Tailored.jpg";
+import IMG1 from "/img/3d/01.jpg";
+import IMG2 from "/img/3d/02.jpg";
+import IMG3 from "/img/3d/03.png";
+import IMG4 from "/img/3d/Craftsmanship.jpg";
+import IMG5 from "/img/3d/Delivery.jpg";
+import IMG6 from "/img/3d/Modification.jpg";
+import IMG7 from "/img/3d/Tailored.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 

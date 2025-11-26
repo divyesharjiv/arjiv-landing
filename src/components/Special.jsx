@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 
-import special from "@/assets/img/special.png";
+import special from "/img/special.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

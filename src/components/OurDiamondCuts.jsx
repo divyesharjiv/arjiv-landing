@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import brilliantcut from "@/assets/img/Diamondcuts/brilliant-cut.jpg";
-import stepcut from "@/assets/img/Diamondcuts/step-cut.jpg";
-import oldcut from "@/assets/img/Diamondcuts/old-cut.jpg";
-import rosepotraitcut from "@/assets/img/Diamondcuts/rose-potrait-cut.jpg";
-import exquiste from "@/assets/img/Diamondcuts/exquiste.jpg";
-import fancycolor from "@/assets/img/Diamondcuts/fancy-color.jpg";
-import brioletteCut from "@/assets/img/Diamondcuts/briolette-cut.jpg";
+import brilliantcut from "/img/Diamondcuts/brilliant-cut.jpg";
+import stepcut from "/img/Diamondcuts/step-cut.jpg";
+import oldcut from "/img/Diamondcuts/old-cut.jpg";
+import rosepotraitcut from "/img/Diamondcuts/rose-potrait-cut.jpg";
+import exquiste from "/img/Diamondcuts/exquiste.jpg";
+import fancycolor from "/img/Diamondcuts/fancy-color.jpg";
+import brioletteCut from "/img/Diamondcuts/briolette-cut.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 

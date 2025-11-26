@@ -16,8 +16,9 @@ import GallerySlider from "@/components/GallerySlider";
 import ZoomReveal from "@/components/ZoomReveal";
 import Drum3D from "@/components/Drum3D";
 import EntranceSlider from "@/components/EntranceSlider";
+
 import NinthGrid from "@/components/NinthGrid";
-import HeartAche from "@/components/HeartAche";
+import RoughToPolish from "@/components/RoughToPolish";
 import CosmicSlideshow from "@/components/CosmicSlideshow";
 import ScrollAnimateGallery from "@/components/ScrollAnimationGallery";
 import WaveTextScroll from "@/components/WaveTextScroll";
@@ -51,7 +52,7 @@ function App() {
               {/* <Special /> */}
               {/* <CosmicSlideshow /> */}
               <HeroLanding />
-              <HeartAche />
+              <RoughToPolish />
               <WaveTextScroll />
               <OurDiamondCuts />
               <EntranceSlider />

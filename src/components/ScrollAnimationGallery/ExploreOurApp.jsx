@@ -9,12 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { APP_STORE_APP_URL, PLAY_STORE_APP_URL } from "@/Common";
 import { Link } from "react-router-dom";
 
-import MOB1 from "@/assets/img/App/MOB1.png";
-import MOB2 from "@/assets/img/App/MOB2.png";
-import MOB3 from "@/assets/img/App/MOB3.png";
-import MOB4 from "@/assets/img/App/MOB4.png";
-import MOB5 from "@/assets/img/App/MOB5.png";
-import MOB6 from "@/assets/img/App/MOB6.png";
+import MOB1 from "/img/App/MOB1.png";
+import MOB2 from "/img/App/MOB2.png";
+import MOB3 from "/img/App/MOB3.png";
+import MOB4 from "/img/App/MOB4.png";
+import MOB5 from "/img/App/MOB5.png";
+import MOB6 from "/img/App/MOB6.png";
 
 gsap.registerPlugin(Flip, ScrollTrigger);
 

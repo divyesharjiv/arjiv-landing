@@ -90,14 +90,16 @@ const HorizontalScroll = () => {
     const scrollWidth = track.scrollWidth - window.innerWidth;
 
     const lenis = new Lenis({
-      duration: 1.1,
+      duration: 1.2,
       smooth: true,
       smoothWheel: true,
-      easing: (t) => t * (2 - t),
+      // easing: (t) => t * (2 - t),
+      easing: (t) => 1 - Math.pow(1 - t, 3),
     });
 
     function raf(time) {
       lenis.raf(time);
+      ScrollTrigger.update();
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
@@ -132,7 +134,6 @@ const HorizontalScroll = () => {
         scrub: 1.5,
       };
 
-      // Title — slow parallax
       if (title) {
         gsap.fromTo(
           title,

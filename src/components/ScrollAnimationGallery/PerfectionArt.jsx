@@ -73,7 +73,7 @@ const PerfectionArt1 = ({ images = [] }) => {
   }, []);
 
   const defaultImages = Array(15).fill(0).map((_, i) => 
-    `/src/assets/img/custom/${i + 1}.jpg`
+    `/img/custom/${i + 1}.jpg`
   );
 
   const displayImages = images.length > 0 ? images : defaultImages;

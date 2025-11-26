@@ -1,15 +1,15 @@
 import { useEffect, useRef } from "react";
 
-import BDB from "@/assets/img/ALLIANCE/BDB.png";
-import CANADAMARK from "@/assets/img/ALLIANCE/CANADAMARK.png";
-import DUNS from "@/assets/img/ALLIANCE/DUNS.png";
-import GIA from "@/assets/img/ALLIANCE/GIA.png";
-import GJEPC from "@/assets/img/ALLIANCE/GJEPC.png";
-import IGBC from "@/assets/img/ALLIANCE/IGBC.png";
-import ITRACEIT from "@/assets/img/ALLIANCE/ITRACEIT.png";
-import RJC from "@/assets/img/ALLIANCE/RJC.png";
-import SDB from "@/assets/img/ALLIANCE/SDB.png";
-import TRACR from "@/assets/img/ALLIANCE/TRACR.png";
+import BDB from "/img/ALLIANCE/BDB.png";
+import CANADAMARK from "/img/ALLIANCE/CANADAMARK.png";
+import DUNS from "/img/ALLIANCE/DUNS.png";
+import GIA from "/img/ALLIANCE/GIA.png";
+import GJEPC from "/img/ALLIANCE/GJEPC.png";
+import IGBC from "/img/ALLIANCE/IGBC.png";
+import ITRACEIT from "/img/ALLIANCE/ITRACEIT.png";
+import RJC from "/img/ALLIANCE/RJC.png";
+import SDB from "/img/ALLIANCE/SDB.png";
+import TRACR from "/img/ALLIANCE/TRACR.png";
 
 const forwardImages = [CANADAMARK, GIA, RJC, TRACR, ITRACEIT];
 const reverseImages = [DUNS, GJEPC, IGBC, SDB, BDB];

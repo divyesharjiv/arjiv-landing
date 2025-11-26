@@ -2,12 +2,14 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Flip } from "gsap/Flip";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./ScrollEffects.scss";
-// import X1 from "./1.png"
-import X1 from "./rough-diamond.png"
-// import X1 from "./2.png"
-// import X1 from "./3.webp"
-// import X1 from "./4.png"
+import "./RoughToPolish.scss";
+
+// import X1 from "/img/rough/1.png"
+import X1 from "/img/rough/rough-diamond.png"
+// import X1 from "/img/rough//2.png"
+// import X1 from "/img/rough//3.webp"
+// import X1 from "/img/rough//4.png"
+
 gsap.registerPlugin(Flip, ScrollTrigger);
 
 const ScrollItem = ({ data, index }) => {
@@ -18,84 +20,6 @@ const ScrollItem = ({ data, index }) => {
   const maskRef = useRef(null);
   const imageRef = useRef(null);
   const textRef = useRef(null);
-
-  //   useEffect(() => {
-  //     const wrap = wrapRef.current;
-  //     const layout = layoutRef.current;
-  //     const titleUp = titleUpRef.current;
-  //     const text = textRef.current;
-  //     const mask = maskRef.current;
-  //     const image = imageRef.current;
-
-  //     // Guard clause
-  //     if (!wrap || !layout || !titleUp || !text || !mask || !image) return;
-
-  //     layout.prepend(titleUp);
-  //     layout.appendChild(text);
-
-  //     // Identify mask type and target attribute
-  //     const isCircle = mask.tagName.toLowerCase() === "circle";
-  //     const fromValue = isCircle
-  //       ? { r: mask.getAttribute("r") }
-  //       : { d: mask.getAttribute("d") };
-  //     const toValue = isCircle
-  //       ? { r: mask.dataset.valueFinal }
-  //       : { d: mask.dataset.valueFinal };
-
-  //     ScrollTrigger.getAll().forEach((t) => {
-  //       if (t.trigger === wrap) t.kill();
-  //     });
-
-  //     // Create individual timeline per section
-  //     const tl = gsap.timeline({
-  //       defaults: { ease: "power2.inOut" },
-  //       scrollTrigger: {
-  //         trigger: wrap,
-  //         start: "top top",
-  //         end: "+=150%",
-  //         scrub: 2.5,
-  //         pin: true,
-  //         // anticipatePin: 1,
-  //       },
-  //     });
-
-  //     tl.fromTo(
-  //       mask,
-  //       { attr: fromValue, transformOrigin: "center center" },
-  //       {
-  //         attr: toValue,
-  //         transformOrigin: "center center",
-  //         duration: 2,
-  //       },
-  //       0.5
-  //     );
-
-  //     tl.fromTo(
-  //       image,
-  //       { scale: 1, filter: "brightness(0%)" },
-  //       {
-  //         filter: "brightness(100%)",
-  //         duration: 0.5,
-  //       },
-  //       0.1
-  //     );
-
-  //     tl.from(text, {
-  //       x: -200,
-  //       y: 100,
-  //       rotation: -45,
-  //       scale: 0.5,
-  //       opacity: 0,
-  //       duration: 1.5,
-  //       ease: "elastic.out(1, 0.5)",
-  //     });
-
-  //     // Cleanup
-  //     return () => {
-  //       tl.scrollTrigger?.kill();
-  //       tl.kill();
-  //     };
-  //   }, []);
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -289,7 +213,7 @@ const ScrollItem = ({ data, index }) => {
   );
 };
 
-export default function HeartAche() {
+export default function RoughToPolish() {
   const scrollData = [
     {
       titleUp: "Rough To Polish ",

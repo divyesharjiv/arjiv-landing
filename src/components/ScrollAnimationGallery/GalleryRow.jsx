@@ -74,13 +74,13 @@ const GalleryRow = ({ images = [], caption }) => {
   }, []);
 
   const defaultImages = [
-    "/src/assets/img/custom/10.jpg",
-    "/src/assets/img/custom/3.jpg",
-    "/src/assets/img/custom/29.jpg",
-    "/src/assets/img/custom/27.jpg",
-    "/src/assets/img/custom/2.jpg",
-    "/src/assets/img/custom/31.jpg",
-    "/src/assets/img/custom/6.jpg",
+    "/img/custom/10.jpg",
+    "/img/custom/3.jpg",
+    "/img/custom/29.jpg",
+    "/img/custom/27.jpg",
+    "/img/custom/2.jpg",
+    "/img/custom/31.jpg",
+    "/img/custom/6.jpg",
   ];
 
   const displayImages = images.length > 0 ? images : defaultImages;

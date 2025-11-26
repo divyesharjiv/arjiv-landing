@@ -5,20 +5,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import "./styles.css";
 
-import IMG1 from "@/assets/img/custom/27.jpg";
-import IMG2 from "@/assets/img/custom/10.jpg";
-import IMG3 from "@/assets/img/custom/3.jpg";
-import IMG4 from "@/assets/img/custom/29.jpg";
-import IMG5 from "@/assets/img/custom/2.jpg";
-import IMG6 from "@/assets/img/custom/31.jpg";
-import IMG7 from "@/assets/img/custom/6.jpg";
+import IMG1 from "/img/custom/27.jpg";
+import IMG2 from "/img/custom/10.jpg";
+import IMG3 from "/img/custom/3.jpg";
+import IMG4 from "/img/custom/29.jpg";
+import IMG5 from "/img/custom/2.jpg";
+import IMG6 from "/img/custom/31.jpg";
+import IMG7 from "/img/custom/6.jpg";
 
-import MOB1 from "@/assets/img/App/MOB1.png";
-import MOB2 from "@/assets/img/App/MOB2.png";
-import MOB3 from "@/assets/img/App/MOB3.png";
-import MOB4 from "@/assets/img/App/MOB4.png";
-import MOB5 from "@/assets/img/App/MOB5.png";
-import MOB6 from "@/assets/img/App/MOB6.png";
+import MOB1 from "/img/App/MOB1.png";
+import MOB2 from "/img/App/MOB2.png";
+import MOB3 from "/img/App/MOB3.png";
+import MOB4 from "/img/App/MOB4.png";
+import MOB5 from "/img/App/MOB5.png";
+import MOB6 from "/img/App/MOB6.png";
 
 gsap.registerPlugin(Flip, ScrollTrigger);
 
@@ -180,7 +180,7 @@ const ScrollAnimationGallery = () => {
               <div
                 key={i}
                 className={`gallery__item pos-${i + 1}`}
-                style={{ backgroundImage: `url(/src/assets/img/custom/${i + 1}.jpg)` }}
+                style={{ backgroundImage: `url(/img/custom/${i + 1}.jpg)` }}
               ></div>
             ))}
             <h2 className="caption !text-black">The Art of Perfection?</h2>

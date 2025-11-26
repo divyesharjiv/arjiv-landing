@@ -1,13 +1,28 @@
 import { Billboard, Banner } from "@/components/webgl";
 import { View } from "@/webgl/View";
 import { useCollageTexture } from "@/hooks";
-import images from "@/hooks/images";
+
+const DRUM_IMAGES = [
+  { url: "/images/1.jpg" },
+  { url: "/images/2.jpg" },
+  { url: "/images/3.jpg" },
+  { url: "/images/4.jpg" },
+  { url: "/images/5.jpg" },
+  { url: "/images/6.jpg" },
+  { url: "/images/7.jpg" },
+  { url: "/images/8.jpg" },
+  { url: "/images/9.jpg" },
+  { url: "/images/10.jpg" },
+  { url: "/images/11.jpg" },
+  { url: "/images/12.jpg" },
+  { url: "/images/13.jpg" },
+];
 
 const COUNT = 4;
 const GAP = 3.2;
 
 export default function Drum3D() {
-  const { texture, dimensions, isLoading } = useCollageTexture(images);
+  const { texture, dimensions, isLoading } = useCollageTexture(DRUM_IMAGES);
   if (isLoading) return null;
 
   return (

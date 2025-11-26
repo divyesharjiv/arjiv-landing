@@ -5086,6 +5086,7 @@ img.nicolet {
 
 .dunes-bg-block {
   background: url(../img/dunes/dunes-bg-2.jpg) center no-repeat;
+  background: url(/public/img/dunes/dunes-bg-2.jpg) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;

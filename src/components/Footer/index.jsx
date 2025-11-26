@@ -16,9 +16,9 @@ import {
   WHATSAPP_URL,
 } from "@/Common";
 
-import ARJIVSVG from "@/assets/svg/ARJIV2.svg";
-import CRYSTAL from "./CRYSTAL.jpg";
-import diamondGLB from "./diamond3.glb";
+import ARJIVSVG from "/svg/ARJIV2.svg";
+import CRYSTAL from "/img/CRYSTAL.jpg";
+import diamondGLB from "/models/diamond3.glb";
 
 const FOOTER_MENU = [
   {
@@ -199,7 +199,6 @@ export default function ArchitectsFooter() {
                   >
                     <img
                       className="w-8 h-8"
-                      // src="https://www.svgrepo.com/show/475647/facebook-color.svg"
                       src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
                       alt="Facebook"
                     />
@@ -215,7 +214,6 @@ export default function ArchitectsFooter() {
                     <span className="icon icon-social-instagram">
                       <img
                         className="w-8 h-8"
-                        // src="https://www.svgrepo.com/show/475658/instagram-color.svg"
                         src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
                         alt="Instagram"
                       />
@@ -232,7 +230,6 @@ export default function ArchitectsFooter() {
                     <span className="icon icon-social-linkedin">
                       <img
                         className="w-8 h-8"
-                        // src="https://www.svgrepo.com/show/475661/linkedin-color.svg"
                         src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
                         alt="LinkedIn"
                       />
@@ -249,7 +246,6 @@ export default function ArchitectsFooter() {
                     <span className="icon icon-social-whatsapp">
                       <img
                         className="w-8 h-8"
-                        // src="https://www.svgrepo.com/show/475692/whatsapp-color.svg"
                         src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
                         alt="Whatsapp"
                       />

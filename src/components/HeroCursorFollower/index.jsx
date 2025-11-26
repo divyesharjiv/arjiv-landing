@@ -3,18 +3,18 @@ import gsap from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import IMG1 from "@/assets/img/shapeFrames/1.svg";
-import IMG2 from "@/assets/img/shapeFrames/2.svg";
-import IMG3 from "@/assets/img/shapeFrames/3.svg";
-import IMG4 from "@/assets/img/shapeFrames/4.svg";
-import IMG5 from "@/assets/img/shapeFrames/5.svg";
-import IMG6 from "@/assets/img/shapeFrames/6.svg";
-import IMG7 from "@/assets/img/shapeFrames/7.svg";
-import IMG8 from "@/assets/img/shapeFrames/8.svg";
-import IMG9 from "@/assets/img/shapeFrames/9.svg";
-import IMG10 from "@/assets/img/shapeFrames/10.svg";
-import IMG11 from "@/assets/img/shapeFrames/11.svg";
-import IMG12 from "@/assets/img/shapeFrames/12.svg";
+import IMG1 from "/img/shapeFrames/1.svg";
+import IMG2 from "/img/shapeFrames/2.svg";
+import IMG3 from "/img/shapeFrames/3.svg";
+import IMG4 from "/img/shapeFrames/4.svg";
+import IMG5 from "/img/shapeFrames/5.svg";
+import IMG6 from "/img/shapeFrames/6.svg";
+import IMG7 from "/img/shapeFrames/7.svg";
+import IMG8 from "/img/shapeFrames/8.svg";
+import IMG9 from "/img/shapeFrames/9.svg";
+import IMG10 from "/img/shapeFrames/10.svg";
+import IMG11 from "/img/shapeFrames/11.svg";
+import IMG12 from "/img/shapeFrames/12.svg";
 
 gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
 

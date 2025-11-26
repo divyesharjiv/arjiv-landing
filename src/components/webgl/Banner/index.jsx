@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 import "@/webgl/materials/MeshBannerMaterial";
 
-import BANNER from "@/assets/img/banner1.jpg";
+import BANNER from "/img/banner1.jpg";
 
 function Banner({ radius = 1.6, ...props }) {
   const ref = useRef(null);
