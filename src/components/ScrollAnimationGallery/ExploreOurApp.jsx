@@ -9,6 +9,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { APP_STORE_APP_URL, PLAY_STORE_APP_URL } from "@/Common";
 import { Link } from "react-router-dom";
 
+import MOB1 from "@/assets/img/App/MOB1.png";
+import MOB2 from "@/assets/img/App/MOB2.png";
+import MOB3 from "@/assets/img/App/MOB3.png";
+import MOB4 from "@/assets/img/App/MOB4.png";
+import MOB5 from "@/assets/img/App/MOB5.png";
+import MOB6 from "@/assets/img/App/MOB6.png";
+
 gsap.registerPlugin(Flip, ScrollTrigger);
 
 const ExploreOurApp = () => {
@@ -50,14 +57,7 @@ const ExploreOurApp = () => {
     };
   }, []);
 
-  const APP_IMAGES = [
-    "/src/assets/img/Z/1.png",
-    "/src/assets/img/Z/2.png",
-    "/src/assets/img/Z/3.png",
-    "/src/assets/img/Z/4.png",
-    "/src/assets/img/Z/5.png",
-    "/src/assets/img/Z/6.png",
-  ];
+  const APP_IMAGES = [MOB1, MOB2, MOB3, MOB4, MOB5, MOB6];
 
   return (
     <main className="explore-main">

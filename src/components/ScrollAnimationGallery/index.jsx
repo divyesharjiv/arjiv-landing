@@ -13,12 +13,12 @@ import IMG5 from "@/assets/img/custom/2.jpg";
 import IMG6 from "@/assets/img/custom/31.jpg";
 import IMG7 from "@/assets/img/custom/6.jpg";
 
-import IMGx1 from "@/assets/img/Z/1.png";
-import IMGx2 from "@/assets/img/Z/2.png";
-import IMGx3 from "@/assets/img/Z/3.png";
-import IMGx4 from "@/assets/img/Z/4.png";
-import IMGx5 from "@/assets/img/Z/5.png";
-import IMGx6 from "@/assets/img/Z/6.png";
+import MOB1 from "@/assets/img/App/MOB1.png";
+import MOB2 from "@/assets/img/App/MOB2.png";
+import MOB3 from "@/assets/img/App/MOB3.png";
+import MOB4 from "@/assets/img/App/MOB4.png";
+import MOB5 from "@/assets/img/App/MOB5.png";
+import MOB6 from "@/assets/img/App/MOB6.png";
 
 gsap.registerPlugin(Flip, ScrollTrigger);
 
@@ -193,12 +193,12 @@ const ScrollAnimationGallery = () => {
             id="gallery-4"
             ref={el => (galleryRefs.current["gallery-4"] = el)}
           >
-            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${IMGx1})` }}></div>
-            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${IMGx2})` }}></div>
-            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${IMGx3})` }}></div>
-            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${IMGx4})` }}></div>
-            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${IMGx5})` }}></div>
-            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${IMGx6})` }}></div>
+            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${MOB1})` }}></div>
+            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${MOB2})` }}></div>
+            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${MOB3})` }}></div>
+            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${MOB4})` }}></div>
+            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${MOB5})` }}></div>
+            <div className="gallery__item gallery__itemX" style={{ backgroundImage: `url(${MOB6})` }}></div>
             <div className="caption">
               <p>AI-generated art captivates with varied creations, sometimes senseless, yet impressively enigmatic.</p>
             </div>

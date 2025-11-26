@@ -4,7 +4,8 @@ import { Flip } from "gsap/Flip";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./ScrollEffects.scss";
 // import X1 from "./1.png"
-import X1 from "./2.png"
+import X1 from "./rough-diamond.png"
+// import X1 from "./2.png"
 // import X1 from "./3.webp"
 // import X1 from "./4.png"
 gsap.registerPlugin(Flip, ScrollTrigger);
@@ -267,7 +268,7 @@ const ScrollItem = ({ data, index }) => {
               </mask>
             </defs>
             <image
-            //   className="!invert"
+              className="!invert"
               href={data.image}
               width={data.svgWidth}
               height={data.svgHeight}
