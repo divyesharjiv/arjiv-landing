@@ -31,19 +31,28 @@ import FoldedGallery from "@/components/FoldedGallery";
 import Footer from "@/components/Footer";
 
 import { ExploreOurApp, GalleryRow, PerfectionArt, WideImageExplore, ImperfectionGridReveal } from "@/components/ScrollAnimationGallery/main";
+import Journey from "@/components/journey";
+import Header from "@/components/Header";
+import StaggeredGrid from "@/components/StaggeredGrid";
+import WhatWeDo from "@/components/WhatWeDo";
+import Policies from "@/Pages/Policies";
+import Traceability from "@/Pages/Traceability";
 
 // import ScrollVideo from "@/components/ScrollVideo";
 // import InfiniteDraggableGallery from "@/components/InfiniteDraggableGallery";
 
+document.addEventListener('mousedown', function(e) {
+  if (e.button === 1) { // 1 = middle mouse button
+    e.preventDefault();
+    return false;
+  }
+});
+
+
 function App() {
   return (
     <MainRouter>
-      <nav className="flex gap-5 py-4 bg-white z-[9999] hidden">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/demo"}>Demo</Link>
-        <Link to={"/drum"}>Drum</Link>
-        <Link to={"/customization"}>Customization</Link>
-      </nav>
+      <Header />
       <Routes>
         <Route
           path="/"
@@ -109,6 +118,16 @@ function App() {
           }
         />
         {/* <Route path="/gallery" element={<InfiniteDraggableGallery />} /> */}
+          <Route path="/journey" element={<Journey />} />
+          <Route path="/policies" element={<Policies />} />
+          <Route path="/traceability" element={<Traceability />} />
+          <Route path="/what-we-do" element={
+            <>
+              <Traceability />
+              <StaggeredGrid />
+            </>
+            }
+          />
       </Routes>
       <Footer />
     </MainRouter>

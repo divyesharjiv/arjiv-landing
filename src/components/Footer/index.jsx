@@ -303,9 +303,9 @@ export default function ArchitectsFooter() {
       <div className="relative z-10 w-full flex justify-center gap-16 items-center">
         <img src={ARJIVSVG} alt="logo" className="w-[70vw] max-w-none h-fit" />
 
-        <div className="w-96 h-96">
+        <div className="w-96 h-96 overflow-hidden">
           {/* // For the Diamond3.glb */}
-          <Canvas camera={{ position: [0, 1, 1] }}>
+          <Canvas camera={{ position: [0, 1, 1] }} className="animate-polish">
             {/* <Canvas camera={{ position: [0, 4, 5] }}> */}
             <color attach="background" args={["#f5f5f5"]} />
 

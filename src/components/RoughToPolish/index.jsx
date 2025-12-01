@@ -6,7 +6,7 @@ import "./RoughToPolish.scss";
 
 // import X1 from "/img/rough/1.png"
 import X1 from "/img/rough/rough-diamond.png"
-// import X1 from "/img/rough//2.png"
+import X2 from "/img/rough/2.png"
 // import X1 from "/img/rough//3.webp"
 // import X1 from "/img/rough//4.png"
 
@@ -20,6 +20,7 @@ const ScrollItem = ({ data, index }) => {
   const maskRef = useRef(null);
   const imageRef = useRef(null);
   const textRef = useRef(null);
+  const newImageRef = useRef(null);
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -28,6 +29,9 @@ const ScrollItem = ({ data, index }) => {
     const text = textRef.current;
     const mask = maskRef.current;
     const image = imageRef.current;
+    const newImage = newImageRef.current;
+    
+    if (!newImage) return; // safety
 
     if (!wrap || !layout || !titleUp || !text || !mask || !image) return;
 
@@ -51,7 +55,7 @@ const ScrollItem = ({ data, index }) => {
       scrollTrigger: {
         trigger: wrap,
         start: "top top",
-        end: "+=150%",
+        end: "+=300%",
         scrub: 2.5,
         pin: true,
       },
@@ -60,15 +64,29 @@ const ScrollItem = ({ data, index }) => {
     tl.fromTo(
       mask,
       { attr: fromValue, transformOrigin: "center center" },
-      { attr: toValue, transformOrigin: "center center", duration: 2 },
-      0.5
+      { attr: toValue, transformOrigin: "center center", duration: 0.5 },
+      0
     );
+
+    // tl.fromTo(
+    //   image,
+    //   { scale: 1, filter: "brightness(0%)" },
+    //   { filter: "brightness(100%)", duration: 0.5 },
+    //   0.1
+    // );
 
     tl.fromTo(
       image,
-      { scale: 1, filter: "brightness(0%)" },
-      { filter: "brightness(100%)", duration: 0.5 },
-      0.1
+      { opacity: 1 },
+      { opacity: 0, duration: 1, ease: "power2.inOut" },
+      1
+    );
+
+    tl.fromTo(
+      newImage,
+      { opacity: 0 },
+      { opacity: 1, duration: 1, ease: "power2.inOut" },
+      1
     );
 
     // ✅ Use fromTo for ScrollTrigger stability
@@ -86,7 +104,7 @@ const ScrollItem = ({ data, index }) => {
         y: 300,
       },
       {
-        fontSize: '2.5rem',
+        fontSize: '3rem',
         y: 30,
         duration: 1.5,
         ease: "power1.inOut",
@@ -194,10 +212,22 @@ const ScrollItem = ({ data, index }) => {
             <image
               className="!invert"
               href={data.image}
+              // href={"https://raw.githubusercontent.com/Murali2011/finalsequence/main/00167.webp"}
               width={data.svgWidth}
               height={data.svgHeight}
               mask={`url(#mask${index + 1})`}
               ref={imageRef}
+            />
+
+            <image
+              className="!invert"
+              href={"https://raw.githubusercontent.com/Murali2011/finalsequence/main/00800.webp"}
+              width={data.svgWidth}
+              height={data.svgHeight}
+              mask={`url(#mask${index + 1})`}
+              ref={newImageRef}
+              opacity="0"
+              style={{ opacity: 0 }}
             />
           </svg>
         </div>

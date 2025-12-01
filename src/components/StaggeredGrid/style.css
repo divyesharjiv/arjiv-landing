@@ -1,0 +1,18 @@
+.sg-root {
+  isolation: isolate;
+  /* background: url(https://i.postimg.cc/Df4GxdxH/aaabstract9.webpwebp);
+  background: url(https://i.postimg.cc/J0zJRg02/x25sd.png);
+  background-color: #feffee; */
+  /* background: url(https://i.postimg.cc/HxrVrdJX/FrameBFGX.jpg);
+  background: url(https://i.postimg.cc/fbwHng3n/Frame-XAA.jpg); */
+
+  background: #bea8822b;
+  background-position: center;
+  background-size: contain;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.sg-grid-item-img {
+  transform-origin: 50% 50%;
+}

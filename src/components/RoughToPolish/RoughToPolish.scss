@@ -166,7 +166,20 @@ $color-link: rgba(255, 255, 255, 0.5);
   }
 }
 
+@keyframes polish {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
 .animate-rough {
     // animation: rotate 60s alternate infinite;
     animation: bob 4s ease-in-out infinite;
+}
+
+.animate-polish {
+    animation: polish 4s ease-in-out infinite;
 }

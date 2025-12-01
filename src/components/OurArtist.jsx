@@ -4,8 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import MAIN_IMG from "/img/bg.jpg";
 // import OVERLAY from "/img/1.svg";
-// import OVERLAY from "/img/2.svg";
-import OVERLAY from "/img/3.svg";
+import OVERLAY from "/img/2.svg";
+// import OVERLAY from "/img/3.svg";
 
 // import Lenis from "@studio-freight/lenis";
 
