@@ -31,7 +31,7 @@ import FoldedGallery from "@/components/FoldedGallery";
 import Footer from "@/components/Footer";
 
 import { ExploreOurApp, GalleryRow, PerfectionArt, WideImageExplore, ImperfectionGridReveal } from "@/components/ScrollAnimationGallery/main";
-import Journey from "@/components/journey";
+import Journey from "@/components/Journey";
 import Header from "@/components/Header";
 import StaggeredGrid from "@/components/StaggeredGrid";
 import WhatWeDo from "@/components/WhatWeDo";
