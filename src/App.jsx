@@ -34,9 +34,9 @@ import { ExploreOurApp, GalleryRow, PerfectionArt, WideImageExplore, Imperfectio
 import Journey from "@/components/Journey";
 import Header from "@/components/Header";
 import StaggeredGrid from "@/components/StaggeredGrid";
-import WhatWeDo from "@/components/WhatWeDo";
 import Policies from "@/Pages/Policies";
-import Traceability from "@/Pages/Traceability";
+import WhatWeDo from "@/Pages/WhatWeDo";
+import ContactUs from "@/Pages/ContactUs";
 
 // import ScrollVideo from "@/components/ScrollVideo";
 // import InfiniteDraggableGallery from "@/components/InfiniteDraggableGallery";
@@ -120,10 +120,10 @@ function App() {
         {/* <Route path="/gallery" element={<InfiniteDraggableGallery />} /> */}
           <Route path="/journey" element={<Journey />} />
           <Route path="/policies" element={<Policies />} />
-          <Route path="/traceability" element={<Traceability />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/what-we-do" element={
             <>
-              <Traceability />
+              <WhatWeDo />
               <StaggeredGrid />
             </>
             }
