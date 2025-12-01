@@ -95,6 +95,30 @@ const ContactUs = () => {
                 </form>
               </div>
             </div>
+            <div className="flex gap-10 my-16 pt-16 border-black/20 w-full text-center border-t px-10">
+              <div className="flex flex-col w-full">
+                <h4 className="text-4xl mb-6">Manufacturing Unit (Surat)</h4>
+                <iframe
+                  title="Manufacturing Unit (Surat)"
+                  className="w-full h-80 md:h-96"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4450.730021808638!2d72.83393947587598!3d21.214596981368583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ff77461f8c1%3A0x976e1d8c296af3d1!2sArjiv%20Exports!5e1!3m2!1sen!2sin!4v1736333170337!5m2!1sen!2sin"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div className="flex flex-col w-full">
+                <h4 className="text-4xl mb-6">Head Office (Mumbai)</h4>
+                <iframe
+                  title="Head Office (Mumbai)"
+                  className="w-full h-80 md:h-96"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4512.384978439379!2d72.8641597!3d19.065523799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8e8a1f99d19%3A0x9058e81c33e92c9e!2sArjiv%20Exports!5e1!3m2!1sen!2sin!4v1736333100104!5m2!1sen!2sin"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </div>
           <div className="w-full flex justify-center relative">
             <img

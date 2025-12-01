@@ -119,6 +119,7 @@ export default function ArchitectsFooter() {
                 <li>
                   <Link
                     to={CALL_URL}
+                    title={CALL_URL}
                     className="border p-2 rounded-4xl !bg-lime-100"
                   >
                     Contact — +91 989 8300 984
@@ -128,6 +129,7 @@ export default function ArchitectsFooter() {
                   <Link
                     className="border p-2 rounded-4xl !bg-lime-100"
                     to={ARJIV_INFO_EMAIL_URL}
+                    title={ARJIV_INFO_EMAIL_URL}
                   >
                     Mail — info@arjiv.com
                   </Link>
@@ -136,7 +138,7 @@ export default function ArchitectsFooter() {
               <div className="flex lg:justify-start gap-2 items-center mt-8">
                 <Link
                   rel="noopener noreferrer"
-                  aria-label="Download on the App Store"
+                  title="Download on the App Store"
                   to={APP_STORE_APP_URL}
                   target="_blank"
                 >
@@ -144,11 +146,12 @@ export default function ArchitectsFooter() {
                     alt="Download from App Store"
                     className="w-38 h-auto shadow-md"
                     src="https://www.arjivexports.com/static/media/app-store-white.1afd2b718e38efd5968277d147cb032c.svg"
+                    title="Download from App Store"
                   />
                 </Link>
                 <Link
                   rel="noopener noreferrer"
-                  aria-label="Download on Google Play Store"
+                  title="Download on Google Play Store"
                   to={PLAY_STORE_APP_URL}
                   target="_blank"
                 >
@@ -201,6 +204,7 @@ export default function ArchitectsFooter() {
                       className="w-8 h-8"
                       src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
                       alt="Facebook"
+                      title="Facebook"
                     />
                   </Link>
                 </li>
@@ -216,6 +220,7 @@ export default function ArchitectsFooter() {
                         className="w-8 h-8"
                         src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
                         alt="Instagram"
+                        title="Instagram"
                       />
                     </span>
                   </Link>
@@ -232,6 +237,7 @@ export default function ArchitectsFooter() {
                         className="w-8 h-8"
                         src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
                         alt="LinkedIn"
+                        title="LinkedIn"
                       />
                     </span>
                   </Link>
@@ -248,6 +254,7 @@ export default function ArchitectsFooter() {
                         className="w-8 h-8"
                         src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
                         alt="Whatsapp"
+                        title="Whatsapp"
                       />
                     </span>
                   </Link>
