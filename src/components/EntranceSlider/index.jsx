@@ -144,12 +144,12 @@ const DiamondCarousel = () => {
           className="text-center relative z-50 text-[#191818] uppercase font-serif"
           ref={headingsRef}
         >
-          <h1 className="text-[clamp(2.5rem,1.59rem+2vw,1rem)] font-normal my-2">
+          <h2 className="text-[clamp(2.5rem,1.59rem+2vw,1rem)] font-normal my-2">
             Diamond
-          </h1>
-          <h1 className="text-[clamp(2.5rem,1.59rem+2vw,1rem)] font-normal my-2">
+          </h2>
+          <h2 className="text-[clamp(2.5rem,1.59rem+2vw,1rem)] font-normal my-2">
             Manufacturer
-          </h1>
+          </h2>
           <h5 className="text-[clamp(1rem,0.757rem+1.036vw,2rem)] font-normal m-0">
             Since 1985
           </h5>

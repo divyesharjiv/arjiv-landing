@@ -1,25 +1,3 @@
-/*
-InfiniteDraggableGallery.jsx
-
-Vite + React instructions (quick):
-
-1) Create project:
-   npm create vite@latest my-gallery -- --template react
-   cd my-gallery
-2) Install deps:
-   npm install gsap split-type tweakpane
-3) Put this file at src/InfiniteDraggableGallery.jsx
-   and create src/InfiniteGallery.css (contents included below).
-4) Import the component in src/main.jsx: import InfiniteDraggableGallery from './InfiniteDraggableGallery';
-   and render: <InfiniteDraggableGallery />
-
-This file keeps the original behaviour: infinite draggable grid, GSAP animations, SplitType-powered title/captions, Tweakpane settings.
-
-Notes:
-- For brevity the implementation still manipulates DOM to create grid items (similar to the original), but it's fully contained inside a React component and cleans up listeners on unmount.
-- You can extract parts into smaller components later.
-*/
-
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import CustomEase from "gsap/CustomEase";
@@ -697,7 +675,7 @@ export default function InfiniteDraggableGallery() {
   }, []);
 
   return (
-    <div className="gallery-root">
+    <div className="gallery-root select-none bg-black !h-screen !overflow-hidden">
       <div className="h-screen cursor-grab" ref={containerRef}>
         <div className="canvas" id="canvas" ref={canvasRef}></div>
         <div className="overlay" id="overlay" ref={overlayRef}></div>

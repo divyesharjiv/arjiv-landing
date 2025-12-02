@@ -61,6 +61,9 @@ const ScrollVideo = () => {
           preload="auto"
           className="w-full object-contain h-screen mx-auto"
           src="https://www.apple.com/media/us/mac-pro/2013/16C1b6b5-1d91-4fef-891e-ff2fc1c1bb58/videos/macpro_main_desktop.mp4"
+          // src="/videos/hero-video-website.mp4"
+          // src="/videos/Bruting.mp4"
+          // src="/videos/MOONVIDEO.mp4"
           style={{ willChange: "transform" }}
         />
       </section>

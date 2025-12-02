@@ -18,7 +18,7 @@ const RevealGallery = () => {
   const imagesRef = useRef([]);
   const titleRef = useRef(null);
 
-  const images = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7];
+  const images = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG1, IMG2, IMG3, IMG4];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -28,7 +28,6 @@ const RevealGallery = () => {
       imagesRef.current.forEach((img, index) => {
         if (!img) return;
 
-        const i = index + 1;
         const row = Math.floor(index / 2);
         const col = index % 2;
 
@@ -42,10 +41,10 @@ const RevealGallery = () => {
           z: -2000,
           x: xOffset,
           y: yOffset,
-          opacity: 0,
+          opacity: 1,
           rotationY: 0,
           rotationX: 0,
-          scale: 0.50,
+          scale: 0,
         });
       });
 
@@ -118,19 +117,6 @@ const RevealGallery = () => {
           delay: 0.3,
         }
       );
-
-      // Title fade out earlier and scroll release
-      tl.to(
-        titleRef.current,
-        {
-          opacity: 0,
-          scale: 0.95,
-          y: 30,
-          duration: 0.25,
-          ease: "power2.inOut",
-        },
-        0.65
-      );
     }, sectionRef);
 
     return () => {
@@ -141,14 +127,9 @@ const RevealGallery = () => {
 
   return (
     <>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
-        rel="stylesheet"
-      />
-
       <div
         ref={sectionRef}
-        className="relative w-full h-screen bg-black overflow-hidden"
+        className="relative w-full h-screen overflow-hidden"
       >
         <div
           ref={containerRef}
@@ -160,15 +141,8 @@ const RevealGallery = () => {
         >
           <h1
             ref={titleRef}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-white text-center pointer-events-none tracking-[0.15em]"
-            style={{
-              fontFamily: "'Poppins', 'Courier New', monospace",
-              fontSize: "clamp(2.5rem, 10vw, 5rem)",
-              fontWeight: 900,
-              textShadow:
-                "0 0 2rem rgba(255, 255, 255, 0.3), 0 0 4rem rgba(0, 0, 0, 0.8), 0 0 6rem rgba(0, 0, 0, 0.5)",
-              WebkitTextStroke: "1px rgba(255, 255, 255, 0.3)",
-            }}
+            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-center pointer-events-none tracking-[0.15em]"
+            style={{ fontSize: "clamp(2.5rem, 10vw, 5rem)" }}
           >
             Everyday new innovation
           </h1>
@@ -185,13 +159,12 @@ const RevealGallery = () => {
                 alt={`Gallery ${index + 1}`}
                 className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
                 style={{
-                  width: "20rem",
-                  height: "26rem",
-                  objectFit: "cover",
+                  width: "26rem",
+                  height: "32rem",
+                  objectFit: "contain",
                   willChange: "transform",
                   transformStyle: "preserve-3d",
                   borderRadius: "0.75rem",
-                  boxShadow: "0 25px 70px rgba(0, 0, 0, 0.9)",
                 }}
               />
             ))}

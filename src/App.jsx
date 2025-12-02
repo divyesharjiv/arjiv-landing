@@ -38,8 +38,9 @@ import Policies from "@/Pages/Policies";
 import WhatWeDo from "@/Pages/WhatWeDo";
 import ContactUs from "@/Pages/ContactUs";
 
-// import ScrollVideo from "@/components/ScrollVideo";
-// import InfiniteDraggableGallery from "@/components/InfiniteDraggableGallery";
+import ScrollVideo from "@/components/ScrollVideo";
+import RevealGallery from "@/components/RevealGallery";
+import InfiniteDraggableGallery from "@/components/InfiniteDraggableGallery";
 
 document.addEventListener('mousedown', function(e) {
   if (e.button === 1) { // 1 = middle mouse button
@@ -118,6 +119,26 @@ function App() {
           }
         />
         {/* <Route path="/gallery" element={<InfiniteDraggableGallery />} /> */}
+          <Route path="/exhibit" element={<OurShows />} />
+          <Route path="/reveal" element={
+              <>
+                <RevealGallery />
+                <CosmicSlideshow />
+                <ScrollVideo />
+                <CircularCarousel />
+                {/* <section className="h-screen flex items-center justify-center flex-col">
+                  <h1 className="text-6xl">Scroll to explore</h1>
+                  <h1 className="text-5xl my-8">(Demo Only)</h1>
+                </section> */}
+              </>
+            }
+          />
+          <Route path="/drag" element={
+              <>
+                <InfiniteDraggableGallery />
+              </>
+            }
+          />
           <Route path="/journey" element={<Journey />} />
           <Route path="/policies" element={<Policies />} />
           <Route path="/contact-us" element={<ContactUs />} />
