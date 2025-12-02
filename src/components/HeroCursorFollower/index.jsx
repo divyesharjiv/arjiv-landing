@@ -42,11 +42,11 @@ export default function HeroCursorFollower() {
     heading.innerHTML = words
       .map(
         (word) =>
-          `<span class="word inline-block opacity-0 translate-y-6">${word}</span>`
+          `<span class="txt inline-block opacity-0 translate-y-6">${word}</span>`
       )
       .join(" ");
 
-    const wordSpans = heading.querySelectorAll(".word");
+    const wordSpans = heading.querySelectorAll(".txt");
 
     ScrollTrigger.batch(wordSpans, {
       onEnter: () => {
